@@ -137,12 +137,16 @@
                 $(SecondColorSite).val(e.color).css('color', e.color);
                 $('.lb06').val(e.color).text(e.color);
             });
+            var LowerNavBarText = $('.filter-box a');
+            $('#lower-nav-bar-text').colorpicker().on('changeColor', function(e) {
+                $(LowerNavBarText).val(e.color).css('color', e.color);
+                $('.lb06_01').val(e.color).text(e.color);
+            });
             var LowerNavBarBg = $('.filter-box');
             $('#lower-nav-bar').colorpicker().on('changeColor', function(e) {
                 $(LowerNavBarBg).val(e.color).css('background-color', e.color);
                 $('.lb07').val(e.color).text(e.color);
             });
-
             var SearchButtonBg = $('.search-box .location .nice-select, .btn-border');
             $('#search-button-bg').colorpicker().on('changeColor', function(e) {
                 $(SearchButtonBg).val(e.color).css('background-color', e.color);
@@ -157,7 +161,7 @@
                 $('.listing-block').val(e.color).css('background-color', e.color);
                 $('.lb10').val(e.color).text(e.color);
             });
-            var ContentTextBoxColor = $('.listing-block .menu-listing .title-sm, .listing-block .menu-listing .item-sub a, .fr-list-info,.fr-list-info a, .fr-list-bot');
+            var ContentTextBoxColor = $('.frame-listing-block .fr-list, .txt-y,.listing-block .menu-listing .title-sm, .listing-block .menu-listing .item-sub a, .fr-list-info,.fr-list-info a, .fr-list-bot');
             $('#content-box-text').colorpicker().on('changeColor', function(e) {
                 $(ContentTextBoxColor).val(e.color).css('color', e.color);
                 $('.lb11').val(e.color).text(e.color);
@@ -174,6 +178,7 @@
                 $('.lb04').text($('#dropdown-menu-text').val());
                 $('.lb05').text($('#color-code-1').val());
                 $('.lb06').text($('#color-code-2').val());
+                $('.lb06_01').text($('#lower-nav-bar-text').val());
                 $('.lb07').text($('#lower-nav-bar').val());
                 $('.lb08').text($('#search-button-bg').val());
                 $('.lb09').text($('#search-button-bg-text').val());
