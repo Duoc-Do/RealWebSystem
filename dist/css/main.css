@@ -871,7 +871,7 @@ h6
 }
 .frame-listing-block .fr-list .btn-fr-list
 {
-    width: 50px;
+    width: 52px;
 }
 
 .next-btn,
@@ -1778,6 +1778,13 @@ a.goto_top
 {
     margin-bottom: 16px;
 }
+.reviews-block .sort-filter label
+{
+    font-weight: normal;
+
+    min-width: 127px;
+    margin-bottom: 0;
+}
 .reviews-block span.sort
 {
     display: inline-block;
@@ -1841,10 +1848,51 @@ a.goto_top
 
     color: #80a8be;
 }
+.reviews-block .col-listing
+{
+    width: 236px;
+}
+.reviews-block .listing-multi .listing-block
+{
+    float: left;
+
+    height: auto;
+}
+.reviews-block .fr-list-info
+{
+    overflow: auto;
+
+    min-height: 66px;
+    max-height: 66px;
+    padding: 0 10px 0;
+}
+.reviews-block .txt-y
+{
+    margin-bottom: 4px;
+}
+.reviews-block .fr-list-bot
+{
+    padding: 5px 10px;
+}
 
 .infoForm .title-detail
 {
     margin-bottom: 20px;
+}
+
+.txt-note-list
+{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 22px;
+
+    color: #6f6f6f;
+}
+
+.txt-rating
+{
+    font-size: 12px;
+    font-weight: bold;
 }
 
 /* -------------------->>> HEADER <<<-------------------- */
