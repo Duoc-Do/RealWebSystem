@@ -77,6 +77,7 @@
                 $('#myInput').focus();
             });
             $('#myModalColor').on('shown.bs.modal', function() {});
+            $('#myGroupFav').on('shown.bs.modal', function() {});
             // $('#mySelectLocation').on('shown.bs.modal', function() {});
             // $('#mySelectFeature').on('shown.bs.modal', function() {});
             $('.btn-login').click(function() {
