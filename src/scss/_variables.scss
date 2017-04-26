@@ -10,17 +10,76 @@ $color_blue: #3498DB;
 $dark_blue: #2d5077;
 $light-blue: #cddbea;
 $color_orange: #FF9900;
-$c-green: #507501;
-$c-dark-green: #436201;
-$c-blue: #00527d;
-$c-blue2: #80a8be;
-$c-grey: #ecf2f8;
-$c-grey2: #6f6f6f;
 $c-red: #943814;
 $c-light-grey: #d7e0ea;
-$c-dark-grey: #383d3f;
-$bg-trans: rgba(0,82,125,0.8);
-$bg-trans-black: rgba(0,0,0,0.5);
+// start default
+$c-green: #507501; // c05 color changer
+$c-dark-green: #436201; // c05 color changer
+$c-blue: #00527d; // c06 color changer
+$c-blue2: #80a8be; // c06 color changer
+$c-grey: #ecf2f8;
+$c-grey2: #6f6f6f; // c11 color changer
+$c-dark-grey: #383d3f; // c01 color changer
+$c01:#ffffff; // c-dark-grey, Masthead / Footer (Top & Bottom of site)
+$c02:#383d3f; // Masthead / Footer Titles 
+$c03:#d2b38a; // Dropdown Menu Color 
+$c04:#ffffff; // Dropdown Menu Text (Dropdown Menu)
+$c05:#507501; // c-green, c-dark-green, Main Accent 
+$c06:#00527d; // c-blue, c-blue2, Secondary Accent
+$c06_01:#ffffff; // Nav Bar under Main Photo 
+$c07:$c-dark-grey; // Nav Bar under Main Photo Text 
+$c08:#ffffff; // Location Features Search Save Background
+$c09:#507501; // Location Features Search Save Background Text  
+$c10:#ffffff; // Listing Content Box 
+$c11:#507501; // c-grey, Listing Content Box Text 
+$c12:#ffffff; // Background Color 
+// end default
+// start opt1
+// $c-green: #8e282b; // c05 color changer
+// $c-dark-green: #8e282b; // c05 color changer
+// $c-blue: #676813; // c06 color changer
+// $c-blue2: #676813; // c06 color changer
+// $c-grey: #ecf2f8;
+// $c-grey2: #3d3c3a; // c11 color changer
+// $c-dark-grey: #2b547e; // c01 color changer
+// $c01:#2b547e;
+// $c02:#ba9067;
+// $c03:#d2b38a;
+// $c04:#8e282b;
+// $c05:#8e282b;
+// $c06:#676813;
+// $c06_01:#8e282b;
+// $c07:#ba9067;
+// $c08:#c19970;
+// $c09:#676813;
+// $c10:#f5dcb3;
+// $c11:#3d3c3a;
+// $c12:#6690ba;
+// end opt1
+// start opt2
+// $c-green: #8e282b; // c05 color changer
+// $c-dark-green: #8e282b; // c05 color changer
+// $c-blue: #676813; // c06 color changer
+// $c-blue2: #676813; // c06 color changer
+// $c-grey: #ecf2f8;
+// $c-grey2: #3d3c3a; // c11 color changer
+// $c-dark-grey: #2b547e; // c01 color changer
+// $c01:#2b547e;
+// $c02:#ba9067;
+// $c03:#d2b38a;
+// $c04:#8e282b;
+// $c05:#8e282b;
+// $c06:#676813;
+// $c06_01:#8e282b;
+// $c07:#ba9067;
+// $c08:#c19970;
+// $c09:#676813;
+// $c10:#f5dcb3;
+// $c11:#3d3c3a;
+// $c12:#6690ba;
+// end opt2
+$bg-trans: rgba(0, 82, 125, 0.8);
+$bg-trans-black: rgba(0, 0, 0, 0.5);
 $img-select: url("../images/select-icon2.png");
 $w-site:1180px!important;
 $w-btn:100px;
@@ -35,7 +94,6 @@ $font_1: raleway-bold;
 $font_2: raleway-semibold;
 $font_3: arial;
 $sz_normal:12px;
-
 //urls
 $url_0: url(../fonts/raleway-regular.eot);
 $url_1: url(../fonts/raleway-regular.eot?#iefix);
@@ -57,93 +115,99 @@ $url_16: url(../img/sm_hover.png);
 $url_17: url(../img/men_icons.png);
 $url_18: url(../img/tech.jpg);
 $url_19: url(../img/p_navigation.png);
-
 //@extend-elements
 //original selectors
 //h1, h2, h3, h4, h5, h6
 %extend_1 {
-	color: $color_gravel_approx;
-	font-family: $font_3;
-	letter-spacing: 1px;
-	font-weight: bolder;
+    color: $color_gravel_approx;
+    font-family: $font_3;
+    letter-spacing: 1px;
+    font-weight: bolder;
 }
 
 //original selectors
 //#menu_icon, .close_menu
 %extend_2 {
-	float: right;
-	margin-right: 40px;
-	width: 40px;
-	height: 40px;
-	cursor: pointer;
-	background: $url_17 no-repeat;
+    float: right;
+    margin-right: 40px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: $url_17 no-repeat;
 }
 
 //original selectors
 //.content h1, .content h2, .content h3, .content h4, .content h5, .content h6
 %extend_3 {
-	color: $color_gravel_approx;
-	font-family: $font_3;
-	font-weight: bold;
-	line-height: 28px;
-	margin-bottom: 30px;
+    color: $color_gravel_approx;
+    font-family: $font_3;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 30px;
 }
+
 // for side: left and right
 %extend_4 {
-	position:absolute;
-	top:7rem;
-	bottom:7rem;
-	width: 0.1rem;
-	background-color:#3a5c81;
+    position: absolute;
+    top: 7rem;
+    bottom: 7rem;
+    width: 0.1rem;
+    background-color: #3a5c81;
 }
 
 @font-face {
-	font-family: $font_0;
-	src: $url_0;
-	src: $url_1 format('embedded-opentype'), $url_2 format('woff'), $url_3 format('truetype'), $url_4 format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: $font_0;
+    src: $url_0;
+    src: $url_1 format('embedded-opentype'), $url_2 format('woff'), $url_3 format('truetype'), $url_4 format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+
 @font-face {
-	font-family: $font_1;
-	src: $url_5;
-	src: $url_6 format('embedded-opentype'), $url_7 format('woff'), $url_8 format('truetype'), $url_9 format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: $font_1;
+    src: $url_5;
+    src: $url_6 format('embedded-opentype'), $url_7 format('woff'), $url_8 format('truetype'), $url_9 format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+
 @font-face {
-	font-family: $font_2;
-	src: $url_10;
-	src: $url_11 format('embedded-opentype'), $url_12 format('woff'), $url_13 format('truetype'), $url_14 format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: $font_2;
+    src: $url_10;
+    src: $url_11 format('embedded-opentype'), $url_12 format('woff'), $url_13 format('truetype'), $url_14 format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
-@mixin tablet{
-	@media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}){
-		@content;
-	}
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
 }
+
 @mixin desktop {
-	@media (min-width:#{$desktop-width}){
-		@content;
-	}
+    @media (min-width:#{$desktop-width}) {
+        @content;
+    }
 }
-@mixin mobile{
-	@media(min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}){
-		@content;
-	}
+
+@mixin mobile {
+    @media(min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
 }
-%select-style{
-	  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: $img-select center right no-repeat;
-  border: 2px solid $c-green;
-  color:$c-green;
-	min-width: $w-btn;
-	height: 34px;
-	border-radius: 0;
-	padding-left:4px;
+
+%select-style {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: $img-select center right no-repeat;
+    border: 2px solid $c-green;
+    color: $c-green;
+    min-width: $w-btn;
+    height: 34px;
+    border-radius: 0;
+    padding-left: 4px;
 }

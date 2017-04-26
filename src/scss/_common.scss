@@ -6,6 +6,10 @@ html {
     line-height: 1.5;
 }
 
+body {
+    background-color: $c12;
+}
+
 *,
 *:after,
 *:before {
@@ -172,9 +176,10 @@ h6 {
     overflow: hidden;
     width: 100%;
     min-height: 53px;
+    background-color: $c06_01; // color changer
     a {
         padding: 0 30px;
-        color: $c-dark-grey;
+        color: $c07; // color changer
         &.active {
             color: $c-blue;
             text-decoration: underline;
@@ -274,10 +279,10 @@ h6 {
 }
 
 .copyright {
-    color: $c-grey2;
     font-size: 12px;
     padding: 20px 0;
-    background-color: $c-grey;
+    color: $c02; // color changer
+    background-color: $c-grey; // color changer
     .txt-cpr {
         padding-top: 7px;
     }
@@ -318,6 +323,8 @@ h6 {
             text-align: center !important;
             margin-top: 10px;
             width: $w-sm-select !important;
+            background-color: $c08; // color changer
+            color: $c09; // color changer
         }
         &.select-multiple-page {
             .nice-select {
@@ -376,7 +383,7 @@ h6 {
     float: left;
     text-align: center;
     margin-right: 3px;
-    color: $c-green;
+    color: $c09;
 }
 
 .theme-green .back-bar {
@@ -477,8 +484,9 @@ h6 {
         // padding-right: 5px;
     }
     .listing-block {
-        height: 340px;
+        height: 345px;
         border: 1px solid $c-grey2;
+        background-color: $c10; // color changer
         .menu-listing {
             width: 148px;
             border-right: 1px solid $c-grey2;
@@ -501,8 +509,9 @@ h6 {
 .frame-listing-block {
     float: left;
     width: 213px;
+    background-color: $c10; // color changer
     .fr-list {
-        background-color: $c-green;
+        background-color: $c11;
         color: $white;
         font-size: $sz_normal;
         line-height: 34px;
@@ -568,6 +577,7 @@ h6 {
     width: 100%;
     padding: 10px;
     font-size: 14px;
+    height: 44px;
     img {
         margin-top: 4px;
     }
@@ -593,7 +603,7 @@ h6 {
     .listing-block {
         height: auto;
         float: left;
-        background-color: $white;
+        background-color: $c10; // color changer
     }
 }
 
@@ -666,7 +676,7 @@ h6 {
             }
             .next-btn {
                 float: left;
-                background-color: $white;
+                background-color: $c-dark-green;
                 padding: 3px 3px 2px;
                 color: $c-blue;
                 border: 1px solid $c-blue;
@@ -695,7 +705,7 @@ h6 {
     text-transform: uppercase;
     span {
         padding: 0 10px;
-        background-color: $white;
+        background-color: $c12; // color changer
     }
     &::before {
         position: absolute;
@@ -786,6 +796,7 @@ h6 {
             width: 200px;
             padding: 20px 0;
             min-height: auto;
+            background-color: $c03; // color changer
         }
     }
 }
@@ -930,6 +941,7 @@ h6 {
         .list {
             margin-top: 0px;
             min-height: auto!important;
+            background-color: $c03; // color changer
             .option {
                 width: 100%;
             }
@@ -997,6 +1009,7 @@ h6 {
                 padding-top: 6px;
                 font-weight: bold;
                 color: $c-green;
+                height: auto;
             }
             .detail-grid-info {
                 line-height: 24px;
@@ -1052,7 +1065,7 @@ a.color-config {
     top: 0;
     left: 0;
     padding: 10px;
-    background-color: $c-blue;
+    background-color: $c-green;
     color: $white;
     z-index: 9999;
     &:hover {
@@ -1067,6 +1080,7 @@ a.color-config {
 .search-box {
     position: relative;
     .btn-border {
+        background-color: $c08; // color changer
         &.select-location,
         &.select-feature {
             margin-top: 9px;
@@ -1079,7 +1093,7 @@ a.color-config {
     position: absolute;
     top: 70px;
     left: 0;
-    background-color: $bg-trans;
+    background-color: $c03; // color changer
     height: 400px;
     width: 100%;
     z-index: 999;
@@ -1102,7 +1116,7 @@ a.color-config {
         text-align: right;
         margin-top: 20px;
         .btn-border {
-            background-color: $white;
+            background-color: $c08; // color changer
             float: none;
             display: inline-block;
         }
@@ -1115,6 +1129,7 @@ a.color-config {
         padding: 10px;
         .list {
             margin-top: 2px;
+            background-color: $c03; // color changer
         }
         .option {
             width: 100%;
@@ -1169,10 +1184,9 @@ a.color-config {
     font-weight: bold;
 }
 
-.list li:nth-of-type(2n+1) {
-    background-color: #ecf2f8;
-}
-
+// .list li:nth-of-type(2n+1) {
+//     background-color: #ecf2f8;
+// }
 .category-list ul li {
     padding: 5px;
     border-top: 1px solid #ddd;
@@ -1205,7 +1219,7 @@ a.goto_top {
     bottom: 0;
     right: 0;
     z-index: 99999;
-    background-color: green;
+    background-color: $c-green;
     padding: 10px;
     color: #ffffff!important;
 }
