@@ -509,10 +509,10 @@ h6 {
 .frame-listing-block {
     float: left;
     width: 213px;
-    background-color: $c10; // color changer
+    // background-color: $c10; // color changer
     .fr-list {
-        background-color: $c11;
-        color: $white;
+        background-color: $c11_01;
+        color: $c11_02;
         font-size: $sz_normal;
         line-height: 34px;
         padding: 0 0 0 10px;
@@ -1062,7 +1062,7 @@ h6 {
 
 a.color-config {
     position: fixed;
-    top: 0;
+    top: 92px;
     left: 0;
     padding: 10px;
     background-color: $c-green;

@@ -12,8 +12,18 @@ $light-blue: #cddbea;
 $color_orange: #FF9900;
 $c-red: #943814;
 $c-light-grey: #d7e0ea;
+$bg-trans: rgba(0, 82, 125, 0.8);
+$bg-trans-black: rgba(0, 0, 0, 0.5);
+$img-select: url("../images/select-icon2.png");
+$w-site:1180px!important;
+$w-btn:100px;
+$w-lg-slider:300px;
+$w-sm-select-multiple:200px;
+$w-sm-slider:200px;
+$w-sm-select:100px;
+$pd-slider:18px;
 // start default
-$c-green: #507501; // c05 color changer
+$c-green: #507501; // c05, c11_01, c11 color changer
 $c-dark-green: #436201; // c05 color changer
 $c-blue: #00527d; // c06 color changer
 $c-blue2: #80a8be; // c06 color changer
@@ -22,7 +32,7 @@ $c-grey2: #6f6f6f; // c11 color changer
 $c-dark-grey: #383d3f; // c01 color changer
 $c01:#ffffff; // c-dark-grey, Masthead / Footer (Top & Bottom of site)
 $c02:#383d3f; // Masthead / Footer Titles 
-$c03:#d2b38a; // Dropdown Menu Color 
+$c03:$bg-trans; // Dropdown Menu Color 
 $c04:#ffffff; // Dropdown Menu Text (Dropdown Menu)
 $c05:#507501; // c-green, c-dark-green, Main Accent 
 $c06:#00527d; // c-blue, c-blue2, Secondary Accent
@@ -32,6 +42,8 @@ $c08:#ffffff; // Location Features Search Save Background
 $c09:#507501; // Location Features Search Save Background Text  
 $c10:#ffffff; // Listing Content Box 
 $c11:#507501; // c-grey, Listing Content Box Text 
+$c11_01:#507501; // c-grey, Listing Content Box Bars
+$c11_02:#ffffff; // c-grey, Listing Content Box Bars Text
 $c12:#ffffff; // Background Color 
 // end default
 // start opt1
@@ -78,16 +90,6 @@ $c12:#ffffff; // Background Color
 // $c11:#3d3c3a;
 // $c12:#6690ba;
 // end opt2
-$bg-trans: rgba(0, 82, 125, 0.8);
-$bg-trans-black: rgba(0, 0, 0, 0.5);
-$img-select: url("../images/select-icon2.png");
-$w-site:1180px!important;
-$w-btn:100px;
-$w-lg-slider:300px;
-$w-sm-select-multiple:200px;
-$w-sm-slider:200px;
-$w-sm-select:100px;
-$pd-slider:18px;
 //fonts
 $font_0: raleway-regular;
 $font_1: raleway-bold;

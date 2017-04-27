@@ -162,12 +162,21 @@
                 $('.listing-block').val(e.color).css('background-color', e.color);
                 $('.lb10').val(e.color).text(e.color + " ");
             });
-            var ContentTextBoxColor = $('.frame-listing-block .fr-list, .txt-y,.listing-block .menu-listing .title-sm, .listing-block .menu-listing .item-sub a, .fr-list-info,.fr-list-info a, .fr-list-bot');
+            var ContentTextBoxColor = $('.txt-y,.listing-block .menu-listing .title-sm, .listing-block .menu-listing .item-sub a, .fr-list-info,.fr-list-info a, .fr-list-bot');
             $('#content-box-text').colorpicker().on('changeColor', function(e) {
                 $(ContentTextBoxColor).val(e.color).css('color', e.color);
                 $('.lb11').val(e.color).text(e.color + " ");
             });
-
+            var ContentTextBoxBarColor = $('.frame-listing-block .fr-list');
+            $('#content-box-bar').colorpicker().on('changeColor', function(e) {
+                $(ContentTextBoxBarColor).val(e.color).css('background-color', e.color);
+                $('.lb11_01').val(e.color).text(e.color + " ");
+            });
+            var ContentTextBoxBarTextColor = $('.frame-listing-block .fr-list');
+            $('#content-box-bar-text').colorpicker().on('changeColor', function(e) {
+                $(ContentTextBoxBarTextColor).val(e.color).css('color', e.color);
+                $('.lb11_02').val(e.color).text(e.color + " ");
+            });
             $('#bg-web').colorpicker().on('changeColor', function(e) {
                 $('body')[0].style.backgroundColor = e.color.toString('rgba');
                 $('.lb12').val(e.color).text(e.color + " ");
@@ -185,6 +194,8 @@
                 $('.lb09').text($('#search-button-bg-text').val() + " ");
                 $('.lb10').text($('#listing-bg').val() + " ");
                 $('.lb11').text($('#content-box-text').val() + " ");
+                $('.lb11_01').text($('#content-box-bar').val() + " ");
+                $('.lb11_02').text($('#content-box-bar-text').val() + " ");
                 $('.lb12').text($('#bg-web').val() + " ");
             });
             $('#mySelectLocation, #mySelectFeature').hide();
@@ -235,6 +246,8 @@
                 $('.lb09').text($('#search-button-bg-text').val() + " ");
                 $('.lb10').text($('#listing-bg').val() + " ");
                 $('.lb11').text($('#content-box-text').val() + " ");
+                $('.lb11_01').text($('#content-box-bar').val() + " ");
+                $('.lb11_02').text($('#content-box-bar-text').val() + " ");
                 $('.lb12').text($('#bg-web').val() + " ");
             });
 

@@ -630,7 +630,6 @@ h6 {
 .frame-listing-block {
   float: left;
   width: 213px;
-  background-color: #ffffff;
 }
 .frame-listing-block .fr-list {
   background-color: #507501;
@@ -904,7 +903,7 @@ h6 {
   width: 200px;
   padding: 20px 0;
   min-height: auto;
-  background-color: #d2b38a;
+  background-color: rgba(0, 82, 125, 0.8);
 }
 
 .head-detail .txt-product {
@@ -1037,7 +1036,7 @@ h6 {
 .select-detail .nice-select .list {
   margin-top: 0px;
   min-height: auto !important;
-  background-color: #d2b38a;
+  background-color: rgba(0, 82, 125, 0.8);
 }
 .select-detail .nice-select .list .option {
   width: 100%;
@@ -1150,7 +1149,7 @@ h6 {
 
 a.color-config {
   position: fixed;
-  top: 0;
+  top: 92px;
   left: 0;
   padding: 10px;
   background-color: #507501;
@@ -1180,7 +1179,7 @@ a.color-config:hover {
   position: absolute;
   top: 70px;
   left: 0;
-  background-color: #d2b38a;
+  background-color: rgba(0, 82, 125, 0.8);
   height: 400px;
   width: 100%;
   z-index: 999;
@@ -1222,7 +1221,7 @@ a.color-config:hover {
 #mySelectLocation .nice-select .list,
 #mySelectFeature .nice-select .list {
   margin-top: 2px;
-  background-color: #d2b38a;
+  background-color: rgba(0, 82, 125, 0.8);
 }
 #mySelectLocation .nice-select .option,
 #mySelectFeature .nice-select .option {
@@ -1481,7 +1480,7 @@ a.goto_top {
   margin-top: 20px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  background-color: #d2b38a;
+  background-color: rgba(0, 82, 125, 0.8);
 }
 
 .navbar-default .navbar-nav > li > a {
