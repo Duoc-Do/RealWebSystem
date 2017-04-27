@@ -1405,6 +1405,20 @@ a.goto_top {
   font-size: 12px;
 }
 
+.modal-body label,
+.well.center-block {
+  color: #000000;
+}
+
+.js-copytextarea {
+  height: 0px !important;
+  width: 0px !important;
+  position: absolute;
+  right: 0;
+  color: #fff !important;
+  border: 1px solid #fff !important;
+}
+
 /* -------------------->>> HEADER <<<-------------------- */
 .header {
   background-color: #ffffff;

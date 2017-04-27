@@ -1318,3 +1318,17 @@ a.goto_top {
     font-weight: bold;
     font-size: 12px;
 }
+
+.modal-body label,
+.well.center-block {
+    color: $black;
+}
+
+.js-copytextarea {
+    height: 0px!important;
+    width: 0px!important;
+    position: absolute;
+    right: 0;
+    color: #fff!important;
+    border: 1px solid #fff!important;
+}
